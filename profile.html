@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <title>Homepage</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="login.js"></script>
+    
+</head>
+    <body>
+      
+      <div class="navbar">
+        <a href="homepage.html">Info</a>
+        <a href="profile.html">Profile</a>
+        <div class="dropdown">
+          <button class="dropbtn">Dashboard 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="record.html">FCSIT Achievements</a>
+            <a href="#">Event advertisement</a>
+            <a href="#">Report generation</a>
+            
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">Application 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="apply.php">Event participation</a>
+            <a href="#">Participation evidence submission</a>
+          </div>
+        </div>
+        <a href="index.html">Logout</a>
+        </div>
+
+        <div class="container" style="background-color:gainsboro;border-radius: 3px;padding:70px 0;">
+            <div class="intro" style="background-color:;margin-left:5%;margin-top:; font-size: medium;">
+                <p>Email: wie190033@siswa.um.edu.my</p>
+                <p>Username: wie190033</p>
+            </div>
+            
+                <div class="form-signin" style="margin-right:5%;"onsubmit="return validate()">
+                    <form id="form_id" method="post" name="profileform">
+                      <h1 class="h3 mb-3 fw-normal"><b>User profile</b> - change password</h1>
+                  
+                      <div class="form-floating">
+                        <label for="floatingInput">Old password</label>
+                        <input type="password" class="form-control" id="oldpw" placeholder="Current password">
+                        
+                      </div>
+                      <div class="form-floating">
+                        <label for="floatingPassword">New password</label>
+                        <input type="password" class="form-control" id="Newpw" placeholder="New password">
+                        
+                      </div>
+                      <div class="form-floating">
+                        <label for="floatingPassword">Confirm new password</label>
+                        <input type="password" class="form-control" id="CNewpw" placeholder="New password">
+                        
+                      </div>
+                  
+                      <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Change</button>
+                      
+                    </form>
+                  </div>
+
+        </div>
+    </body>
+</html>
