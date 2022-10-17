@@ -1,4 +1,8 @@
 <!doctype html>
+<?php
+  header( 'Location: https://saifulamri21.github.io/saifulamri21/' );
+  exit();
+?>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -9,10 +13,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body class="text-center">
-<?php
-  header( 'Location: https://saifulamri21.github.io/saifulamri21/' );
-  exit();
-?>
+
 <?php
 require('config.php');
 session_start();
